@@ -29,7 +29,7 @@ body {
    font-weight: 400;
    font-size: var(--font-size-1);
    color: var(--color-neutral-800);
- }
+}
 h1 { 
    font-size: var(--font-size-5);
    font-weight: 500;
@@ -72,6 +72,12 @@ main h3 {
 .square {
    width: 250px;
    height: 250px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: var(--font-size-2);
+   color: white;
+   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 #art1 {
    background-image: url(images/art-1.jpg);
@@ -98,9 +104,16 @@ main h3 {
    box-shadow: 2px 2px 2px 2px var(--color-neutral-200);
 }
 .theme ul {
+   display: grid;
+   grid-template-columns: repeat(2, 250px);
+   grid-template-rows: repeat(2, 250px);
+   grid-gap: var(--spacing-med);
+   justify-content: center;
    cursor: pointer;
 }
-
-
-/* add styles here */
-
+.container {
+   display: grid;
+   grid-template-columns: minmax(80px, 200px) minmax(80px, 200px) 1fr;
+   grid-template-rows: 1fr;
+   height: 100vh;
+}
