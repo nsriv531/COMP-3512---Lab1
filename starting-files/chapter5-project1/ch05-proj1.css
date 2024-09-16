@@ -1,43 +1,100 @@
 /* general text formatting */
-
-
 body {
-   font-family: "Roboto", Verdana, Arial, sans-serif;
-   font-size: 100%;
- background-color: #ECEFF1;    
-}
-
-section {
-   background-color: white;
-   margin: 1em 4em 1em 4em;
-   border: solid 1pt black;
-
-}
-section h3 {
-  color: white;
-  padding: 0.75rem;
-  background-color: #263238; 
-}
-
-.status {
-    border-radius: 0.25rem;
-    padding: 3px;
+    font-family: "Roboto", Verdana, Arial, sans-serif;
+    font-size: 100%;
+    background-color: #ECEFF1;
+ }
+ 
+ section {
+    background-color: white;
+    margin: 1em 4em 1em 4em;
+    border: solid 1pt black;
+ }
+ section h3 {
     color: white;
-    
-}
-.status-processing {
-    background-color:    #E65100;    
-}
-.status-shipped {
-    background-color:   #4CAF50;    
-}
-.status-pending {
-    background-color:    #03A9F4;    
-}
+    padding: 0.75rem;
+    background-color: #263238;
+ }
+ 
+ /* Status styling */
+ .status {
+     border-radius: 0.25rem;
+     padding: 3px;
+     color: white;
+ }
+ .status-processing {
+     background-color: #E65100;
+ }
+ .status-shipped {
+     background-color: #4CAF50;
+ }
+ .status-pending {
+     background-color: #03A9F4;
+ }
+ 
+ /* Table styling */
+ table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1em;
+ }
+ table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+ }
+ table caption {
+    caption-side: top;
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 10px;
+ }
+ table th {
+    background-color: #607D8B;
+    color: white;
+ }
+ table td {
+    vertical-align: middle;
+ }
+ 
+ /* Form styling */
+ form {
+    margin-top: 1em;
+ }
+ fieldset {
+    border: 1px solid #607D8B;
+    padding: 1em;
+ }
+ legend {
+    font-weight: bold;
+    color: #607D8B;
+ }
+ label {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.2em;
+    font-weight: bold;
+ }
+ input[type="text"], input[type="date"], select {
+    width: 100%;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 0.25em;
+ }
+ input[type="radio"] {
+    margin-right: 0.5em;
+ }
+ 
+ input[type="submit"] {
+    background-color: #607D8B;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 0.25em;
+    cursor: pointer;
+ }
 
-
-
-/* table formatting -- you will add these */
-
-
-
+ input[type="submit"]:hover {
+    background-color: #455A64;
+ }
+ 
