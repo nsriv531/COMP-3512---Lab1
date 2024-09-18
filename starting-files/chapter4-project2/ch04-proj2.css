@@ -25,11 +25,12 @@ header {
 h1 {
    font-size: 36px;
    font-weight: 800;
+   color: black; /* Ensure heading stays black */
 }
 
 /* Column styling */
 .column {
-   background-color: white;
+   background-color: white; /* Keep columns white */
    padding: 20px;
    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
    box-sizing: border-box;
@@ -37,25 +38,41 @@ h1 {
    width: 100%;
 }
 
-/* Background colors for different columns */
-.column {
-   background-color: #f4f4f4;
-}
-
+/* Highlighting Standard plan box */
 .featured {
-   background-color: #A0B082;
+   border: 2px solid #4B0082; /* Border highlighting for the Standard plan */
 }
 
+/* Price styling */
+p.price {
+   font-size: 36px;
+   font-weight: 600;
+   margin-top: 0;
+}
+
+/* Price color for each tier */
 p.price.free {
-   color: #5BB189;
+   color: #5BB189; /* Green for Free plan */
+   background-color: #5BB189; /* Apply the green color to the background of the price section */
+   padding: 10px 0;
+   margin-bottom: 20px;
+   color: black; /* Ensure the text is white over the green background */
 }
 
 p.price.standard {
-   color: #A0B082;
+   color: #4B0082; /* Purple for Standard plan */
+   background-color: #4B0082; /* Purple background for price section */
+   padding: 10px 0;
+   margin-bottom: 20px;
+   color: black; /* Ensure text is white over the purple background */
 }
 
 p.price.professional {
-   color: #EC632A;
+   color: #EC632A; /* Orange for Professional plan */
+   background-color: #EC632A; /* Orange background for price section */
+   padding: 10px 0;
+   margin-bottom: 20px;
+   color: black; /* Ensure text is white over the orange background */
 }
 
 /* List styling */
@@ -67,7 +84,7 @@ p.price.professional {
 
 /* Alternate list item colors */
 .column ul li:nth-child(even) {
-   background-color: rgba(47, 59, 64, 0.35);
+   background-color: rgba(47, 59, 64, 0.35); /* Light gray alternating rows */
    padding: 5px;
 }
 
@@ -75,7 +92,7 @@ p.price.professional {
 .column a {
    display: inline-block;
    text-decoration: none;
-   background-color: #3A6BA5;
+   background-color: #3A6BA5; /* Default button background */
    color: white;
    padding: 10px 20px;
    border-radius: 5px;
@@ -87,7 +104,7 @@ p.price.professional {
 
 /* Button hover effect */
 .column a:hover {
-   background-color: #437CBF;
+   background-color: #437CBF; /* Darker blue on hover */
 }
 
 /* "Confidence" section styling */
