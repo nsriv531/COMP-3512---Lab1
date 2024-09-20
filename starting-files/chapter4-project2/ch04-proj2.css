@@ -11,8 +11,8 @@ section {
    margin: 0 auto;
    display: grid;
    grid-template-columns: repeat(3, 1fr); /* 3 equal-width columns */
-   gap: 20px; /* Space between the columns */
-   grid-template-rows: auto; /* Allow rows to adjust automatically */
+   gap: 20px; 
+   grid-template-rows: auto; 
 }
 
 /* Heading styling */
@@ -41,41 +41,41 @@ h1 {
 
 /* Highlighting Standard plan box */
 .column.featured {
-   background-color: #2F4F4F; /* Black/dark grey background for the standard plan */
+   background-color: #2F4F4F; 
    color: white; /* White text */
-   border: 2px solid #4B0082; /* Purple border */
-   box-shadow: rgba(47, 59, 64, 0.35) 0px 8px 15px; /* Stronger shadow for emphasis */
-   transform: scale(1.05); /* Slightly enlarge the standard box */
-   padding: 20px; /* Maintain padding */
+   border: 2px solid #4B0082; 
+   box-shadow: rgba(47, 59, 64, 0.35) 0px 8px 15px; 
+   transform: scale(1.05); 
+   padding: 20px; 
 }
 
 .column.featured ul li {
-   background-color: transparent; /* No background for list items */
+   background-color: transparent; 
    color: white; /* White text */
 }
 
 .column.featured ul li span {
-   color: white; /* Ensure spans inside the list items are white */
+   color: white; 
 }
 
-/* Price styling */
+
 p.price {
    font-size: 36px;
    font-weight: 600;
    margin-top: 0;
 }
 
-/* Price color for each tier */
+
 p.price.free {
    color: black;
-   background-color: #5BB189; /* Apply the green color to the background of the price section */
+   background-color: #5BB189; 
    padding: 10px 0;
    margin-bottom: 20px;
 }
 
 p.price.standard {
    color: white;
-   background-color: #4B0082; /* Purple background for price section */
+   background-color: #4B0082; 
    padding: 10px 0;
    margin-bottom: 20px;
    font-weight: 800;
@@ -83,7 +83,7 @@ p.price.standard {
 
 p.price.professional {
    color: white;
-   background-color: #EC632A; /* Orange background for price section */
+   background-color: #EC632A; 
    padding: 10px 0;
    margin-bottom: 20px;
 }
@@ -95,17 +95,17 @@ p.price.professional {
    margin: 20px 0;
 }
 
-/* Alternate list item colors */
+
 .column ul li:nth-child(even) {
-   background-color: rgba(47, 59, 64, 0.15); /* Lighter gray alternating rows */
+   background-color: rgba(47, 59, 64, 0.15); 
    padding: 5px;
 }
 
-/* Sign Up button styling */
+
 .column a {
    display: inline-block;
    text-decoration: none;
-   background-color: #3A6BA5; /* Default button background */
+   background-color: #3A6BA5; 
    color: white;
    padding: 10px 20px;
    border-radius: 5px;
@@ -113,27 +113,25 @@ p.price.professional {
    text-align: center;
    font-weight: 600;
    margin-top: 20px;
-   max-width: 200px; /* Prevent button from being too wide */
+   max-width: 200px; 
    margin-left: auto; /* Center align the button */
    margin-right: auto; /* Center align the button */
 }
 
-/* Button hover effect */
+
 .column a:hover {
-   background-color: #437CBF; /* Darker blue on hover */
+   background-color: #437CBF; 
 }
 
-/* Button styling for Standard plan */
 .column.featured a {
-   background-color: #3A6BA5; /* Blue button background */
-   color: white; /* White text */
+   background-color: #3A6BA5; 
+   color: white; 
 }
 
 .column.featured a:hover {
-   background-color: #437CBF; /* Darker blue on hover */
+   background-color: #437CBF; 
 }
 
-/* "Confidence" section styling */
 #confidence {
    background-color: #2F4F4F;
    padding: 20px;
@@ -145,13 +143,13 @@ p.price.professional {
    margin-right: auto; /* Center the section */
 }
 
-/* Remove bullets and style confidence section list items */
+
 #confidence ul {
    list-style: none;
    padding: 0;
 }
 
-/* Confidence list items with checkmark background */
+
 #confidence ul li {
    margin: 10px 0;
    padding-left: 30px;
